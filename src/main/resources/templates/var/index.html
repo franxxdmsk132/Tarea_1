@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enviar Params...</title>
+</head>
+<body>
+<h1 th:text = "${titulo}" ></h1>
+
+<ul>
+    <li>
+        <a th:href="@{/var/var/} + 'Que ondaaa'" > /var/var?texto=Que ondaaaa</a>
+    </li>
+    <li>
+        <a th:href="@{/var/var/} + 'AAAAA' "> /params/string?texto=AAAAA</a>
+    </li>
+    <li>
+        <a th:href="@{/var/var/}  + 'xd' +'/' + '199' "> /params/string?Saluido +  numero</a>
+    </li>
+
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+            text-align: left;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<title th:text="${titulo}" ></title>
+<body>
+<div>
+    <h2 class="color" th:text="${titulo}"></h2>
+    <span>Hola de nuevo</span>
+</div>
+
+
+
+<h3 class="colo22r" >Listado</h3>
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Correo</th>
+    </tr>
+    <tr>
+        <td th:text="${usuario.name}"></td>
+        <td th:text="${usuario.lastName}"></td>
+        <td th:text="${usuario.email}"></td>
+
+    </tr>
+
+</table>
+<h4 th:if="${usuario.email == null}"  th:text="'El usuario no tiene un Email'" ></h4>
+</body>
+</html>

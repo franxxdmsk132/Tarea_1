@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enviar Params...</title>
+</head>
+<body>
+<h1>Enviar parametros</h1>
+
+<ul>
+    <li>
+        <a th:href="@{/par/string(texto= 'Que ondaaaa')}"> /params/string?texto=Que ondaaaa</a>
+    </li>
+    <li>
+        <a th:href="@{/par/string(texto= 'Quiuboleeee')}"> /params/string?texto=Quiuboleee</a>
+    </li>
+    <li>
+        <a th:href="@{/par/mix(saludo= 'Hola', numero = 21 )}"> /params/string?Saluido +  numero</a>
+    </li>
+    <li>
+        <a th:href="@{/par/mixed(saludo= 'Holiiiiis', numero = 132 )}"> /params/string?Saluido +  numero 2</a>
+    </li>
+</ul>
+
+</body>
+</html>
